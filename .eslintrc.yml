@@ -1,0 +1,48 @@
+---
+ecmaFeatures:
+  jsx: true
+extends: eslint:recommended
+rules:
+  indent:
+  - warn
+  - 4
+  - {SwitchCase: 1, VariableDeclarator: {}}
+  quotes:
+  - warn
+  - single
+  linebreak-style:
+  - error
+  - unix
+  no-extra-semi:
+  - error
+  no-console:
+  - warn
+  no-control-regex:
+  - warn
+  strict:
+  - warn
+  - global
+  eqeqeq:
+  - warn
+  comma-dangle:
+  - off
+  no-unused-vars:
+  - warn
+  no-redeclare:
+  - warn
+  spaced-comment:
+  - warn
+  - always
+  camelcase:
+  - warn
+  - properties: always
+  no-eval:
+  - error
+  handle-callback-err:
+  - warn
+  - "^.*(e|E)rr"
+  no-path-concat:
+  - error
+env:
+  node: true
+  es6: true
